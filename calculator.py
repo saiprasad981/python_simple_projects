@@ -1,15 +1,20 @@
-a=int(input("Enter a value:"))
-b=int(input("Enter b value:"))
-c=int(input("enter 1.for addition 2.for subtraction 3.for multiplication 4.for division 5.for remainder :"))
-if c==1:
-    print(a+b)
-elif c==2:
-    print(a-b)
-elif c==3:
-    print(a*b)
-elif c==4:
-    print(a/b)
-elif c==5:
-    print(a%b)
+a=input()
+x,y=a.split(" ")
+p=int(x)
+q=int(y)
+print("Choose Options: 1.Addition 2.Subtraction 3.Multiplication 4.Divison 5.remainder 6.Floor_division ")
+z=int(input("Enter Your Option:"))
+if z==1:
+    print(f"Addition:{p+q}")
+elif z==2:
+    print(f"Subtraction:{p-q}")
+elif z==3:
+    print(f"Multiplication:{p*q}")
+elif z==4:
+    print(f"Division:{p/q}")
+elif z==5:
+    print(f"Remainder:{p%q}")
+elif z==6:
+    print(f"Floor_division:{p//q}")
 else:
-    print("input error")
+    print("You Selected Wrong Option")
